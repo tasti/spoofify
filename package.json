@@ -4,8 +4,9 @@
   "description": "",
   "scripts": {
     "build": "react-scripts build",
-    "start": "npm run build && node index.js",
-    "react-start": "react-scripts start"
+    "client": "react-scripts start",
+    "server": "node index.js",
+    "start": "npm run build && npm run server"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
@@ -14,6 +15,7 @@
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-scripts": "0.7.0",
-    "telnet-client": "^0.12.3"
+    "telnet-client": "^0.12.3",
+    "whatwg-fetch": "^2.0.1"
   }
 }
