@@ -7,8 +7,13 @@ const PORT = process.env.PORT || 8000;
 
 app.use(bodyParser.json());
 app.use(cors());
+app.use(express.static('build'))
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
+  return res.json({"succes": "yo"});
+});
+
+app.get('*', (req, res) => {
   return res.json({"succes": "yo"});
 });
 

@@ -3,11 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "node index.js"
+    "build": "react-scripts build",
+    "start": "npm run build && node index.js",
+    "react-start": "react-scripts start"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
     "cors": "^2.8.1",
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-scripts": "0.7.0"
   }
 }
