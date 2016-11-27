@@ -16,4 +16,3 @@ Created by <a href="https://github.com/anusans">Anusan</a> and <a href="https://
 - try it out!
 
 Congratulations, you played yourself.
-

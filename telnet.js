@@ -1,7 +1,7 @@
 const telnet = require('telnet-client');
 
 const connection = new telnet();
-const params = {host: 'mxer.uwaterloo.ca', port: 25, shellPrompt: '********************************************************************************************************************************************'};
+const params = {host: 'mxer.uwaterloo.ca', port: 25, shellPrompt: /(\*+|postmaster@uwaterloo\.ca)/};
 
 module.exports = (mailFrom, rcptTo, body) => {
   return connection.connect(params)

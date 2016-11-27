@@ -1,6 +1,6 @@
-module.exports = (victimName, victimEmail, company, jobTitle, link) => {
-	return `From: Co-operative Education <ceca@uwaterloo.ca>
-To: ${victimName} <${victimEmail}>
+module.exports = (toName, toEmail, company, jobTitle, link) => {
+  return `From: Co-operative Education <ceca@uwaterloo.ca>
+To: ${toName} <${toEmail}>
 Subject: uW Pick Interview Slot
 Reply-To: congratulations@youplayedyouself.com
 Mime-Version: 1.0;
@@ -9,7 +9,7 @@ Content-Transfer-Encoding: 7bit;
 
 <html>
 <body>
-<p class="p1"><span class="s1">${victimName},</span></p>
+<p class="p1"><span class="s1">${toName},</span></p>
 <p class="p2">&nbsp;</p>
 <p class="p1"><span class="s1">You&#39;ve been selected for an interview with ${company}, ${jobTitle}(#00306253). Click&nbsp;<a href="${link}"><span class="s2">here</span></a>&nbsp;to select a time slot</span><span class="s3">.</span></p>
 <p class="p2">&nbsp;</p>
@@ -45,5 +45,5 @@ Content-Transfer-Encoding: 7bit;
 </html>
 
 .
-	`;
+`;
 };
